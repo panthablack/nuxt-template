@@ -1,16 +1,39 @@
 {
-  "name": "nuxt-app",
+  "name": "spotlight-vue",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "yarn vitest --run",
+    "test:unit": "yarn vitest --run",
+    "test:watch": "yarn vitest",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.3",
+    "axios": "^1.7.3",
     "nuxt": "^3.13.0",
-    "vue": "latest"
+    "pinia": "^2.2.1",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.5.0",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@nuxt/test-utils": "^3.14.0",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^9.8.0",
+    "happy-dom": "^14.12.3",
+    "husky": "^9.1.4",
+    "playwright-core": "^1.46.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5",
+    "vue-tsc": "^2"
   }
 }

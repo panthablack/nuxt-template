@@ -1,0 +1,10 @@
+html {
+  @apply min-h-screen;
+}
+
+body,
+#__nuxt,
+.appContainer,
+.defaultLayoutContainer {
+  @apply h-full min-h-screen;
+}
