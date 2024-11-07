@@ -1,11 +1,11 @@
 <template>
   <div class="defaultLayoutContainer h-full bg-white">
     <Title>{{ title }}</Title>
-    <NavBar />
+    <NavAbsoluteHeader />
     <main class="h-full">
       <slot />
     </main>
-
+    <NavFooter />
   </div>
 </template>
 

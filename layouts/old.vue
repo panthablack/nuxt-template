@@ -1,11 +1,7 @@
 <template>
-  <div class="defaultLayoutContainer h-full bg-white">
+  <div class="defaultLayoutContainer h-full">
     <Title>{{ title }}</Title>
-    <NavBar />
-    <main class="h-full">
-      <slot />
-    </main>
-
+    <slot />
   </div>
 </template>
 
